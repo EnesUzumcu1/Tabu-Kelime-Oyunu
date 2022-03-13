@@ -1,0 +1,2 @@
+rootProject.name='Tabu'
+include ':app'

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tabu</string>
+    <integer name="Oyun_Suresi">60</integer>
+    <integer name="Takim_Sayisi">2</integer>
+    <integer name="Pas_Hakki">5</integer>
+    <integer name="Tur_Sayisi">1</integer>
+</resources>
