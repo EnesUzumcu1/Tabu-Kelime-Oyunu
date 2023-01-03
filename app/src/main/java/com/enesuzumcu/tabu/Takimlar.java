@@ -1,4 +1,4 @@
-package com.example.tabu;
+package com.enesuzumcu.tabu;
 
 public class Takimlar {
     private String takimAdi;
