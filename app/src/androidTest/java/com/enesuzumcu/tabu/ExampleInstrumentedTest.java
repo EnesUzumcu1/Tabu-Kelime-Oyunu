@@ -1,4 +1,4 @@
-package com.example.tabu;
+package com.enesuzumcu.tabu;
 
 import android.content.Context;
 

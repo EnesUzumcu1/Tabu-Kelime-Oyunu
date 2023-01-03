@@ -5,111 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEB3B"
-    tools:context=".oyunEkrani">
+    tools:context=".GameFragment">
 
     <LinearLayout
-        android:id="@+id/kelimelerLayout"
+        android:id="@+id/llWords"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
         android:layout_marginBottom="1dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="5dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/butonlarLayout"
+        app:layout_constraintBottom_toTopOf="@+id/llButtons"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pasPuanLayout">
 
         <TextView
-            android:id="@+id/anlatilanKelimeTextView"
+            android:id="@+id/tvTargetWord"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:background="@drawable/linear_layout_custom2"
             android:gravity="center"
-            android:text="TextView"
             android:textColor="@android:color/black"
-            android:textSize="45dp"
-            android:textStyle="bold" />
+            android:textSize="45sp"
+            android:textStyle="bold"
+            tools:text="Anlatilan Kelime" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="30dp"
+            android:background="@drawable/linear_layout_custom3"
             android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/tvTabooWord1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:background="@drawable/linear_layout_custom3"
-                android:orientation="vertical">
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:text="tabu1" />
 
-                <TextView
-                    android:id="@+id/tabu1TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:text="TextView"
-                    android:textColor="#000000"
-                    android:textSize="22dp" />
+            <TextView
+                android:id="@+id/tvTabooWord2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:text="tabu2" />
 
-                <TextView
-                    android:id="@+id/tabu2TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:text="TextView"
-                    android:textColor="#000000"
-                    android:textSize="22dp" />
+            <TextView
+                android:id="@+id/tvTabooWord3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:text="tabu3" />
 
-                <TextView
-                    android:id="@+id/tabu3TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:text="TextView"
-                    android:textColor="#000000"
-                    android:textSize="22dp" />
+            <TextView
+                android:id="@+id/tvTabooWord4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:text="tabu4" />
 
-                <TextView
-                    android:id="@+id/tabu4TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:text="TextView"
-                    android:textColor="#000000"
-                    android:textSize="22dp" />
-
-                <TextView
-                    android:id="@+id/tabu5TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:gravity="center"
-                    android:text="TextView"
-                    android:textColor="#000000"
-                    android:textSize="22dp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/tvTabooWord5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:text="tabu5" />
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/butonlarLayout"
+        android:id="@+id/llButtons"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
@@ -123,34 +115,34 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/pasButton"
+            android:id="@+id/btnPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/pas_button"
-            android:text="PAS"
+            android:text="@string/passFixedText"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/tabuButton"
+            android:id="@+id/btnTaboo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/tabu_button"
-            android:text="TABU"
+            android:text="@string/tabooFixedText"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/dogruButton"
+            android:id="@+id/btnTrue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/dogru_button"
-            android:text="DOĞRU"
+            android:text="@string/trueFixedText"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -158,10 +150,8 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:orientation="horizontal"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -173,9 +163,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Takım 1"
             android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textSize="25sp"
+            tools:text="Takım 1" />
 
         <TextView
             android:id="@+id/saniyeTxtView"
@@ -183,9 +173,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="end"
-            android:text="Saniye"
             android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textSize="25sp"
+            tools:text="Saniye" />
 
     </LinearLayout>
 
@@ -194,15 +184,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:orientation="horizontal"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/takimSaniyeLayout">
+        app:layout_constraintTop_toBottomOf="@+id/takimSaniyeLayout"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -212,14 +201,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="PUAN"
+                android:text="@string/scoreFixedText"
                 android:textColor="@android:color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -228,9 +216,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Puan :"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                tools:text="Puan :" />
         </LinearLayout>
 
         <LinearLayout
@@ -241,14 +229,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="KALAN PAS"
+                android:text="@string/remainingPassFixedText"
                 android:textColor="@android:color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -257,15 +244,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Kalan Pas Hakkı : "
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                tools:text="Kalan Pas Hakkı : " />
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/sonucLayout"
+        android:id="@+id/llResult"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center"
@@ -273,20 +260,20 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/butonlarLayout"
+        app:layout_constraintBottom_toTopOf="@+id/llButtons"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pasPuanLayout">
 
         <Button
-            android:id="@+id/baslatBtn"
+            android:id="@+id/btnStart"
             android:layout_width="120dp"
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
             android:background="@drawable/giris_button"
-            android:text="BAŞLA"
-            android:textSize="22dp" />
+            android:text="@string/startFixedText"
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -294,26 +281,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView27"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TAKIM ADI"
+                android:text="@string/teamsNameFixedText"
                 android:textColor="@android:color/black"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:typeface="serif" />
 
             <TextView
-                android:id="@+id/textView28"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="PUAN"
+                android:text="@string/scoreFixedText"
                 android:textColor="@android:color/black"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:typeface="serif" />
         </LinearLayout>
@@ -327,24 +312,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/takimAdi1TextView"
+                android:id="@+id/tvTeamName1"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                tools:text="TakimAdi1" />
 
             <TextView
-                android:id="@+id/takimPuani1TextView"
+                android:id="@+id/tvTeamScore1"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                tools:text="TakimPuani1" />
         </LinearLayout>
 
         <LinearLayout
@@ -356,24 +341,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/takimAdi2TextView"
+                android:id="@+id/tvTeamName2"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                tools:text="TakimAdi2" />
 
             <TextView
-                android:id="@+id/takimPuani2TextView"
+                android:id="@+id/tvTeamScore2"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                tools:text="TakimPuani2" />
         </LinearLayout>
 
         <LinearLayout
@@ -385,24 +370,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/takimAdi3TextView"
+                android:id="@+id/tvTeamName3"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                tools:text="TakimAdi3" />
 
             <TextView
-                android:id="@+id/takimPuani3TextView"
+                android:id="@+id/tvTeamScore3"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                tools:text="TakimPuan3" />
         </LinearLayout>
 
         <LinearLayout
@@ -414,33 +399,34 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/takimAdi4TextView"
+                android:id="@+id/tvTeamName4"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp"
+                tools:text="TakimAdi4" />
 
             <TextView
-                android:id="@+id/takimPuani4TextView"
+                android:id="@+id/tvTeamScore4"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="TextView"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                tools:text="TakimPuani4" />
         </LinearLayout>
 
         <TextView
-            android:id="@+id/kazananTextView"
+            android:id="@+id/tvWinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="25dp" />
+            android:textSize="25sp"
+            tools:text="Winner" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

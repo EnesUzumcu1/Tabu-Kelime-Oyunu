@@ -4,4 +4,26 @@
     <integer name="Takim_Sayisi">2</integer>
     <integer name="Pas_Hakki">5</integer>
     <integer name="Tur_Sayisi">1</integer>
+    <string name="team1DefaultName">Takım 1</string>
+    <string name="team2DefaultName">Takım 2</string>
+    <string name="team3DefaultName">Takım 3</string>
+    <string name="team4DefaultName">Takım 4</string>
+    <string name="team1NameFixedText">1. Takım Adı</string>
+    <string name="team2NameFixedText">2. Takım Adı</string>
+    <string name="team3NameFixedText">3. Takım Adı</string>
+    <string name="team4NameFixedText">4. Takım Adı</string>
+    <string name="setTeamNameFixedText">TAKIM ADI BELİRLE</string>
+    <string name="save">KAYDET</string>
+    <string name="settingsFixedText">AYARLAR</string>
+    <string name="teamsNumberFixedText">Takım Sayısı</string>
+    <string name="timeFixedText">Süre</string>
+    <string name="roundNumberFixedText">Tur Sayısı</string>
+    <string name="passNumberFixedText">Pas Sayısı</string>
+    <string name="startFixedText">BAŞLA</string>
+    <string name="scoreFixedText">PUAN</string>
+    <string name="trueFixedText">DOĞRU</string>
+    <string name="remainingPassFixedText">KALAN PAS</string>
+    <string name="tabooFixedText">TABU</string>
+    <string name="teamsNameFixedText">TAKIM ADI</string>
+    <string name="passFixedText">PAS</string>
 </resources>
