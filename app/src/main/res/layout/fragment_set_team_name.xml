@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CDDC39"
-    tools:context=".SetTeamNameFragment">
+    tools:context=".ui.setteamname.SetTeamNameFragment">
 
     <LinearLayout
         android:layout_width="0dp"

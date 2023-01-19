@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEB3B"
-    tools:context=".GameFragment">
+    tools:context=".ui.game.GameFragment">
 
     <LinearLayout
         android:id="@+id/llWords"
@@ -135,12 +135,12 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/btnTrue"
+            android:id="@+id/btnSuccess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/dogru_button"
-            android:text="@string/trueFixedText"
+            android:text="@string/successFixedText"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
     </LinearLayout>
@@ -153,7 +153,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="horizontal"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -186,12 +186,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/takimSaniyeLayout"
-        android:baselineAligned="false">
+        app:layout_constraintTop_toBottomOf="@+id/takimSaniyeLayout">
 
         <LinearLayout
             android:layout_width="fill_parent"
