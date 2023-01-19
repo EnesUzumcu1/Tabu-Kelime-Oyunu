@@ -1,4 +1,4 @@
-package com.enesuzumcu.tabu;
+package com.enesuzumcu.tabu.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,11 +8,17 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.enesuzumcu.tabu.R;
+import com.enesuzumcu.tabu.ui.home.viewmodel.HomeViewModel;
 import com.enesuzumcu.tabu.databinding.FragmentHomeBinding;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     private NavController navController;
@@ -34,13 +40,6 @@ public class HomeFragment extends Fragment {
 
     private void tanimlamalar() {
         navController = NavHostFragment.findNavController(this);
-        //Eğer daha önceden atama yapılmadıysa 0 olarak kalıyor ve default değerler atanıyor.
-        if (SettingsFragment.secilenSure == 0) {
-            //default değerleri atanıyor.
-            SettingsFragment.secilenTakimSayisi = getResources().getInteger(R.integer.Takim_Sayisi);
-            SettingsFragment.secilenSure = getResources().getInteger(R.integer.Oyun_Suresi);
-            SettingsFragment.secilenPasHakki = getResources().getInteger(R.integer.Pas_Hakki);
-            SettingsFragment.secilenTurSayisi = getResources().getInteger(R.integer.Tur_Sayisi);
-        }
+        HomeViewModel viewModel = new ViewModelProvider(this).get(HomeViewModel.class);
     }
 }

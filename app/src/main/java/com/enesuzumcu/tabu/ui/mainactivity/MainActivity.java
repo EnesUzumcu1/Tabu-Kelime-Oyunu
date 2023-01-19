@@ -1,10 +1,15 @@
-package com.enesuzumcu.tabu;
+package com.enesuzumcu.tabu.ui.mainactivity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.enesuzumcu.tabu.R;
+
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -1,14 +1,12 @@
-package com.enesuzumcu.tabu;
+package com.enesuzumcu.tabu.data.local.database;
 
 import android.content.Context;
 
+import com.enesuzumcu.tabu.utils.Constants;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 public class DatabaseOpenHelper extends SQLiteAssetHelper {
-    public static final String DATABASE_NAME="TabuKelimeleri.db";
-    public static final int DATABASE_VERSION = 1;
-
     public DatabaseOpenHelper(Context context){
-        super(context,DATABASE_NAME,null,DATABASE_VERSION);
+        super(context, Constants.DATABASE_NAME,null,Constants.DATABASE_VERSION);
     }
 }

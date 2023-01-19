@@ -1,6 +1,8 @@
-package com.enesuzumcu.tabu;
+package com.enesuzumcu.tabu.data.model;
 
 public class Takimlar {
+    public static Takimlar team1, team2, team3, team4;
+
     private String takimAdi;
     private int takimPuani;
 
