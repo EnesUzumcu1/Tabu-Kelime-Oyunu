@@ -22,7 +22,7 @@
 Tabu Kelime Oyunu is a game application. The words from the database were read with SQLite Asset Helper. The team with the highest correct guess wins the game.
 
 ## Architecture
-MVVM (Model-View-ViewModel) architecture pattern is used in the development of this application. The development language of the application is Kotlin.
+MVVM (Model-View-ViewModel) architecture pattern is used in the development of this application. The development language of the application is Java.
 
 * Architecture;
     * [View Binding](https://developer.android.com/topic/libraries/view-binding)
